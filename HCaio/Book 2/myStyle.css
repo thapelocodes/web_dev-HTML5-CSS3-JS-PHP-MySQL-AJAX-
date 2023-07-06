@@ -1,0 +1,17 @@
+/* myStyle.css */
+
+body{
+    background-color: #330;
+    color: #fff;
+}
+h1{
+    color:#ff3;
+    text-align: center;
+    font: italic 200% fantasy;
+}
+p{
+    background-color: #ff3;
+    color: #330;
+    text-align: center;
+    border: 3px groove #ff3;
+}

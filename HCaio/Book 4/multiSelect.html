@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>multiSelect.html</title>
+        <script type="text/javascript">
+            //from multiSelect.html
+            function showChoices() {
+                //retrieve data
+                var selLanguage = document.getElementById("selLanguage");
+
+                //set up output string
+                var result = "<h2> Your Languages<\/h2>";
+                result += "<ul> \n";
+                
+                //step through options
+                for (i = 0; i < selLanguage.length; i++) {
+                    //examine current option
+                    currentOption = selLanguage[i];
+
+                    //print it if it has been selected
+                    if (currentOption.selected == true) {
+                        result += "<li>" + currentOption.value +
+                            "<\/li>\n";
+                    }
+                }
+
+                //finish off the list and print it out
+                result += "<\/ul> \n";
+                output = document.getElementById("output");
+                output.innerHTML = result;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Multiple Selections</h1>
+        <form action="">
+            <fieldset>
+                <label>
+                    Select the language(s) you know.
+                    (ctrl-click to select mutiple lines)
+                </label>
+                <select id="selLanguage" multiple="multiple" size="10">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="MySQL">MySQL</option>
+                    <option value="Java">Java</option>
+                    <option value="VB.NET">VB.NET</option>
+                    <option value="Python">Python</option>
+                    <option value="Flash">Flash</option>
+                    <option value="Perl">Perl</option>
+                </select>
+                <button type="button" onclick="showChoices()">
+                    Submit
+                </button>
+            </fieldset>
+        </form>
+        <div id="output">
+
+        </div>
+    </body>
+</html>

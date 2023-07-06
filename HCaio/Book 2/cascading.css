@@ -1,0 +1,13 @@
+body{
+    color: white;
+    background-color: black;
+}
+p{
+    font-family: Comic Sans MS, fantasy;
+}
+.italicized{
+    font-style: italic;
+}
+#bold{
+    font-weight: bold;
+}

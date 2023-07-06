@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>dropDownList.html</title>
+        <script type="text/javascript">
+            //from dropDownList.html
+            function changeColor() {
+                var selColor = document.getElementById("selColor");
+                var color = selColor.value;
+                document.body.style.backgroundColor = color;
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <h1>Please select a color</h1>
+            <fieldset>
+                <select id="selColor" onchange="changeColor()">
+                    <option value="#ffffff">White</option>
+                    <option value="#ff0000">Red</option>
+                    <option value="#ffcc00">Orange</option>
+                    <option value="#ffff00">Yellow</option>
+                    <option value="#00ff00">Green</option>
+                    <option value="#0000ff">Blue</option>
+                    <option value="#663366">Indigo</option>
+                    <option value="#ff00ff">Violet</option>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>

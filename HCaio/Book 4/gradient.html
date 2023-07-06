@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>gradient.html</title>
+        <script type="text/javascript">
+            function draw() {
+                //from gradient.html
+                var drawing = document.getElementById("drawing");
+                var con = drawing.getContext("2d");
+
+                //build a linear gradient
+                lGrad = con.createLinearGradient(0, 0, 100, 200);
+                lGrad.addColorStop(0, "#f00");
+                lGrad.addColorStop(.5, "#0f0");
+                lGrad.addColorStop(1, "#00f");
+
+                con.fillStyle = lGrad;
+                con.fillRect(0, 0, 100, 200);
+
+                //build a radial gradient
+                rGrad = con.createRadialGradient(150, 100, 0, 150,
+                        100, 100);
+                rGrad.addColorStop(0, "#f00");
+                rGrad.addColorStop(.5, "#0f0");
+                rGrad.addColorStop(1, "#00f");
+
+                con.fillStyle = rGrad;
+                con.fillRect(100, 0, 200, 200);
+            }
+        </script>
+    </head>
+    <body onload="draw()">
+        <h1>Canvas Gradient</h1>
+        <canvas id="drawing" width="200" height="200">
+            <p>Your browser does not support the canvas tag...</p>
+        </canvas>
+    </body>
+</html>

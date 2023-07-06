@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    font-size: 30pt;
+}
+fieldset{
+    border: 2px solid #555;
+    background-color: #ddf;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    font-size: 18pt;
+    font-weight: bold;
+    margin-left: 27%;
+}
+input{
+    width: 20em;
+    -webkit-box-align: center;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>addingMethod.html</title>
+        <script type="text/javascript">
+            //from addingMethods.html
+            //create the critter
+            var critter = new Object();
+
+            //add some properties
+            critter.name = "Milo";
+            critter.age = 5;
+
+            //create a method
+            critter.talk = function(){
+                msg = "Hi! My name is " + this.name;
+                msg += " and I'm " + this.age;
+                alert(msg);
+            }
+
+            //call the talk method
+            critter.talk();
+        </script>
+    </head>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>constructor.html</title>
+        <script type="text/javascript">
+            //from constructor.html
+            //building a constructor
+            function Critter(lName, lAge) {
+                this.name = lName;
+                this.age = lAge;
+                this.talk = function() {
+                    msg = "Hi! My name is " + this.name;
+                    msg += " and I'm " + this.age;
+                    alert(msg);
+                }
+            }
+
+            function main() {
+                //build two critters
+                critterA = new Critter("Alpha, 1");
+                critterB = new Critter("Beta", 2);
+                critterB.name = "Charlie";
+                critterB.age = 3;
+
+                //have 'em talk
+                critterA.talk();
+                critterB.talk();
+            }
+
+            main();
+        </script>
+    </head>
+</html>

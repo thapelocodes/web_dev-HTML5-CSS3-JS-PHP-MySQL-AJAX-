@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>ifElse.html</title>
+        <script type="text/javascript">
+            function checkName(){
+                //from ifElse.html
+                lblOutput = document.getElementById("lblOutput");
+                txtInput = document.getElementById("txtInput");
+                userName = txtInput.value;
+                if (userName == "Tim Berners-Lee"){
+                    lblOutput.innerHTML = "Thanks for inventing HTML";
+                } else {
+                    lblOutput.innerHTML = "Do I know you?";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>If Demo</h1>
+        <form action="">
+            <fieldset>
+                <label id="lblOutput">Please enter your name</label>
+                <input type="text" id="txtInput" value="Tim Berners-Lee"/>
+                <button type="button" onclick="checkName()">
+                    click me
+                </button>
+            </fieldset>
+        </form>
+    </body>
+</html>

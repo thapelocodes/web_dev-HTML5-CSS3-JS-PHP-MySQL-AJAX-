@@ -1,0 +1,31 @@
+#head{
+    text-align: center;
+    border-bottom: 3px double gray;
+}
+#left{
+    float: left;
+    width: 20%;
+    padding-left: 1%;
+    min-height: 30em;
+    background-color: #eee;
+}
+#center{
+    float: left;
+    width: 60%;
+    padding-left: 1%;
+    min-height: 30em;
+}
+#right{
+    float: left;
+    width: 17%;
+    padding-left: 1%;
+    min-height: 30em;
+    background-color: #eee;
+}
+#footer{
+    border: 1px black solid;
+    float: left;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}

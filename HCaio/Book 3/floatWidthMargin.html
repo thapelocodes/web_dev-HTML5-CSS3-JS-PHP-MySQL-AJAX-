@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>floatWidthMargin.html</title>
+        <style type="text/css">
+            p{border: 2px black solid;}
+            .floated{float: left; width: 50%;}
+            .right{margin-left: 52%;}
+        </style>
+    </head>
+    <body>
+        <h1>Specfying the width</h1>
+        <p>
+            Paragraph 1.
+            This paragraph has the normal behavior of a block-level
+            element. It takes upe the entire width of the page, and the
+            next element is placed underneath.
+        </p>
+        <p class="floated">
+            Paragraph 2.
+            This paragraph is floated left. The next element will be
+            placed to the right of it. Now this has a width of 50%.
+        </p>
+        <p class="right">
+            Pragraph 3.
+            This paragraph now has a margin-left so it is separated from
+            the previous paragraph. Its width is still automatically
+            determined.
+        </p>
+    </body>
+</html>

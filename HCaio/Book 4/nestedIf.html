@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>nestedIf.html</title>
+        <script type="text/javascript">
+            //from nestedTemp.html
+            function checkTemp(){
+                var temp = prompt("What temperature is it outside?");
+                temp = parseInt(temp);
+
+                if (temp < 60){
+                    if (temp < 32) {
+                        alert("It's freezing!");
+                    } else {
+                        alert("It's cold.");
+                    }
+                } else {
+                    if (temp < 75) {
+                        alert("It's cool.");
+                    } else {
+                        if (temp > 90) {
+                            alert("It's really hot.")
+                        } else {
+                            alert("It's warm.");
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="checkTemp()">
+            Temp Function
+        </button>
+    </body>
+</html>

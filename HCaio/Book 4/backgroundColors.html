@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>bakcgroundColors</title>
+        <script type="text/javascript">
+            //from backgroundColors
+            function makeBlue(){
+                document.body.style.backgroundColor = "blue";
+            }
+            function makeWhite(){
+                document.body.style.backgroundColor = "white";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Click a button to change the color</h1>
+        <form action="">
+            <fieldset>
+                <input type="button"
+                       value="blue"
+                       onclick="makeBlue()"/>
+                <input type="button"
+                       value="white"
+                       onclick="makeWhite()"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

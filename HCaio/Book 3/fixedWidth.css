@@ -1,0 +1,36 @@
+/* fixedWidth.css
+   Provides styling for fixedWidth.html by ensuring
+   that the page has a header, two columns and a 
+   footer as per the given desgin in the book.
+*/
+
+#head{
+    background-color: #e2e393;
+    border-bottom: 3px black solid;
+    text-align: center;
+    width: 800px;
+    padding-top: 1em;
+}
+#left{
+    float: left;
+    width: 200px;
+    clear: left;
+    border-right: 1px solid black;
+    height: 30em;
+    overflow: auto;
+    padding-right: .5em;
+}
+#right{
+    float: left;
+    width: 570px;
+    height: 30em;
+    overflow: auto;
+    padding-left: .5em;
+}
+#footer{
+    clear: both;
+    width: 800px;
+    background-color: #e2e393;
+    text-align: center;
+    border-top: 3px double black;
+}
